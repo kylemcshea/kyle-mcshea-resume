@@ -57,3 +57,5 @@ export const Jobs: JobProps[] = [
     location: "Mahwah, NJ",
   },
 ];
+
+export default Jobs;

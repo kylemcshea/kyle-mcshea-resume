@@ -1,5 +1,5 @@
 import React from "react";
-import { JobProps } from "../data/jobs";
+import { JobProps } from "../api/Jobs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuildingCircleArrowRight,

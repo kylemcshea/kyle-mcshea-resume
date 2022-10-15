@@ -1,7 +1,7 @@
 import POSH from "../assets/posh_logo.jpg";
 import DreamState from "../assets/dreamstate_logo.png";
 import Breez from "../assets/breez_logo.png";
-// website_url, name, image_src, description
+
 export interface ProjectProps {
   website_url: string;
   name: string;
@@ -31,3 +31,5 @@ export const Projects: ProjectProps[] = [
     description: "Event Marketing Startup. HTML, CSS, jQuery, Node, MongoDB",
   },
 ];
+
+export default Projects;

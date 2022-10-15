@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectProps } from "../data/Projects";
+import { ProjectProps } from "../api/Projects";
 
 const ProjectCard: React.FC<ProjectProps> = ({
   website_url,

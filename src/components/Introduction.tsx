@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Headshot from "../assets/chilling_LA.jpg";
-import { Jobs } from "../data/jobs";
-import { Projects } from "../data/Projects";
+import Jobs from "../api/Jobs";
+import Projects from "../api/Projects";
 import JobCard from "./JobCard";
 import ProjectCard from "./ProjectCard";
 import TechSection from "./TechSection";
