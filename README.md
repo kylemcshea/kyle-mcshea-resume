@@ -40,6 +40,7 @@
     project_description
     <br />
     <a href="https://github.com/kylemcshea/kyle-mcshea-resume"><strong>💻View Demo »</strong></a>
+    <br />
     ·
     <a href="https://github.com/kylemcshea/kyle-mcshea-resume/issues">Report Bug</a>
     ·
