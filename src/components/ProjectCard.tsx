@@ -8,7 +8,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
   description,
 }) => {
   return (
-    <div className="max-w-sm bg-slate-300 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full mt-8 md:w-48 lg:w-96 ease-in duration-200 hover:scale-105 bg-slate-300 rounded-lg border border-gray-600 shadow-white shadow-lg dark:bg-gray-800 dark:border-gray-700">
       <a href={website_url} target="_blank">
         <img className="rounded-t-lg w-full" src={image_src} alt={name} />
       </a>
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
           target="_blank"
           className="ease-in duration-200 hover:scale-105 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-slate-700 rounded-lg hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          Check it out
+          😎 Check it out
           <svg
             aria-hidden="true"
             className="ml-2 -mr-1 w-4 h-4"

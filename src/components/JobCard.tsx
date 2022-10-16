@@ -21,7 +21,8 @@ const JobCard: React.FC<JobProps> = ({
       <div className="ml-3 text-base">
         <span>
           <FontAwesomeIcon className="mr-1" icon={faBuildingCircleArrowRight} />
-          {company} ({location})
+          {company}{" "}
+          <span className="invisible lg:visible md:visible">({location})</span>
         </span>
       </div>
       <div className="ml-6 text-base">

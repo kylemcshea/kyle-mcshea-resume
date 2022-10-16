@@ -13,7 +13,9 @@ const TechSection: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
   return (
     <div className="w-full justify-center">
-      <span className="nunito font-semibold text-xl">TECH 💻</span>
+      <span className="nunito font-semibold text-xl border-b-2 border-white lg:ml-0 md:ml-0 ml-6">
+        TECH 💻
+      </span>
       <div className="ml-3 mt-6 grid grid-cols-3 gap-3">
         <div className="flex justify-center">
           <img
