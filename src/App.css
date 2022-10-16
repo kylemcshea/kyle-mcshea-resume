@@ -3,7 +3,19 @@
 }
 
 .position-wave {
-  margin-top: -50px
+  margin-top: -40px
+}
+
+@media (min-width: 768px) { 
+  .position-wave {
+    margin-top: -45px
+  }
+}
+
+@media (min-width: 640px) { 
+  .position-wave {
+    margin-top: -50px
+  }
 }
 
 .nunito {

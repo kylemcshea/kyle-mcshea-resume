@@ -23,7 +23,7 @@ export const Jobs: JobProps[] = [
   },
   {
     position: "CTO",
-    company: "DreamState Server Management",
+    company: "DreamState Development",
     start_date: "6/21",
     end_date: "Present",
     location: "New York, NY",
@@ -50,7 +50,7 @@ export const Jobs: JobProps[] = [
     location: "Miami, FL",
   },
   {
-    position: "Backend Developer (Intern)",
+    position: "Backend Engineer",
     company: "UPS",
     start_date: "6/19",
     end_date: "8/19",
