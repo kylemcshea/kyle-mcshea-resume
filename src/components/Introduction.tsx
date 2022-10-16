@@ -7,12 +7,45 @@ import ProjectCard from "./ProjectCard";
 import TechSection from "./TechSection";
 
 // Animations
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import useWindowDimensions from "../hooks/Introduction";
 
-const techVariant = {
+const projectVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
+};
+
+const experienceVariants: Variants = {
+  offscreen: {
+    x: -600,
+    filter: "blur(20px)",
+  },
+  onscreen: {
+    x: 0,
+    filter: "blur(0px)",
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1.2,
+    },
+  },
+};
+
+const techVariants: Variants = {
+  offscreen: {
+    x: 600,
+    filter: "blur(20px)",
+  },
+  onscreen: {
+    x: 0,
+    filter: "blur(0px)",
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 1.2,
+    },
+  },
 };
 
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
@@ -25,6 +58,8 @@ const Introduction: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
 
   const [isInView, setIsInView] = useState<boolean>(false);
+
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     if (inView) {
@@ -42,9 +77,18 @@ const Introduction: React.FC = () => {
             <div className="text-base ml-3 mt-2">✨ Full Stack Developer</div>
             <div className="text-base ml-3">✅ 2.5 Years Experience</div>
             <div className="text-base ml-3">
-              📝 Stevens Institute Of Technology Class of 2021
+              📝 Stevens Institute Of Technology{" "}
+              <span className="hidden lg:inline md:inline">Class of 2021</span>
             </div>
-            <div className="text-base ml-3">👉 hi@kylemcshea.com</div>
+            <div className="text-base ml-3">
+              💌{" "}
+              <a
+                className="underline decoration-blue-400"
+                href="mailto: hi@kylemcshea.com"
+              >
+                hi@kylemcshea.com
+              </a>
+            </div>
           </span>
           <div className="lg:block md:block hidden mt-6">
             <span className="nunito font-semibold text-xl border-b-2 border-white">
@@ -91,17 +135,38 @@ const Introduction: React.FC = () => {
           </div>
 
           <div className="mt-6">
-            <span className="nunito font-semibold text-xl border-b-2 border-white">
-              EXPERIENCE 🏢
-            </span>
-            <div className="ml-3 mt-2">
-              {Jobs.map((job) => {
-                return <JobCard {...job} />;
-              })}
-            </div>
+            {width < 768 ? (
+              <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
+              >
+                <motion.div variants={experienceVariants}>
+                  <span className="nunito font-semibold text-xl border-b-2 border-white">
+                    EXPERIENCE 🏢
+                  </span>
+                  <div className="ml-3 mt-2">
+                    {Jobs.map((job) => {
+                      return <JobCard {...job} />;
+                    })}
+                  </div>
+                </motion.div>
+              </motion.div>
+            ) : (
+              <>
+                <span className="nunito font-semibold text-xl border-b-2 border-white">
+                  EXPERIENCE 🏢
+                </span>
+                <div className="ml-3 mt-2">
+                  {Jobs.map((job) => {
+                    return <JobCard {...job} />;
+                  })}
+                </div>
+              </>
+            )}
           </div>
         </div>
-        <div className="slide-right mr-12">
+        <div className={`${width > 768 && "slide-right"} mr-12`}>
           <div className="hidden lg:flex md:flex justify-center">
             <div className="smooth-image-wrapper">
               <span className="z-20 rotate-45"></span>
@@ -130,12 +195,24 @@ const Introduction: React.FC = () => {
             </div>
           </div>
           <div className="mt-6">
-            <TechSection />
+            {width < 768 ? (
+              <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
+              >
+                <motion.div variants={techVariants}>
+                  <TechSection />
+                </motion.div>
+              </motion.div>
+            ) : (
+              <TechSection />
+            )}
           </div>
         </div>
         <motion.div
           className="mt-6 lg:mt-0 md:mt-0"
-          variants={techVariant}
+          variants={projectVariant}
           initial="hidden"
           ref={ref}
           animate={control}
