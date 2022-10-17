@@ -59,7 +59,12 @@ const NavBar: React.FC = () => {
           </div>
           <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
             <li className="border-b border-gray-400 my-8 uppercase">
-              <a href="">Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1PCM_sdCdyoWl1d_3h7hiyuP887VeVUnu/view?usp=sharing"
+                target="_blank"
+              >
+                Resume
+              </a>
             </li>
             <li className="border-b border-gray-400 my-8 uppercase">
               <a href="https://github.com/kylemcshea" target="_blank">
@@ -81,7 +86,8 @@ const NavBar: React.FC = () => {
         <div className="text-sm md:flex-grow lg:flex-grow"></div>
         <div>
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1PCM_sdCdyoWl1d_3h7hiyuP887VeVUnu/view?usp=sharing"
+            target="_blank"
             className="ease-in-out duration-300 mr-2 inline-block text-sm px-4 py-2 leading-none rounded text-slate-700 border-white hover:border-transparent hover:text-white hover:bg-black mt-4 md:mt-0 lg:mt-0"
           >
             <FontAwesomeIcon className="mr-1" icon={faChevronCircleRight} />
