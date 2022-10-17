@@ -50,6 +50,7 @@
 ### Built With
 
 - [![React][react.js]][react-url]
+- [![TypeScript][typescript.ts]][typescript-url]
 - [![Tailwind][tailwind.css]][tailwind-url]
 - [![Vercel][vercel.app]][vercel-url]
 - [![Vite][vitejs.dev]][vitejs-url]
@@ -85,6 +86,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [product-screenshot]: public/images/resume_demo.mp4
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
+[typescript.ts]: https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB
+[typescript-url]: https://www.typescriptlang.org/
 [tailwind.css]: https://img.shields.io/badge/tailwind%20css-20232A?style=for-the-badge&logo=tailwindcss&logoColor=61DAFB
 [tailwind-url]: https://tailwindcss.com/
 [vercel.app]: https://img.shields.io/badge/vercel-20232A?style=for-the-badge&logo=vercel&logoColor=61DAFB
