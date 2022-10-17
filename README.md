@@ -34,7 +34,7 @@
   <p align="center">
     Portfolio / Resume to showcase my experience as a developer. 
     <br />
-    <a href="https://github.com/kylemcshea/kyle-mcshea-resume"><strong>💻View Demo »</strong></a>
+    <a href="https://kylemcshea.com"><strong>💻View Demo »</strong></a>
     <br />
   </p>
 </div>
