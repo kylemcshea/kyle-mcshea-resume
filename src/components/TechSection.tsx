@@ -19,7 +19,7 @@ const TechSection: React.FC = () => {
                 alt={`${t.name} Logo`}
                 className={`smooth-image ${
                   imageLoaded ? "image-visible" : "image-hidden"
-                } ${t.name === "React" && "rotating"}`}
+                }`}
                 onLoad={() => setImageLoaded(true)}
               />
             </div>

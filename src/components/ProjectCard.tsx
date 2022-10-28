@@ -8,7 +8,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
   description,
 }) => {
   return (
-    <div className="w-full mt-8 md:w-48 lg:w-96 ease-in duration-200 hover:scale-105 bg-slate-300 rounded-lg border border-gray-600 shadow-white shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full mt-8 md:w-48 lg:w-96 ease-in duration-200 hover:scale-105 bg-slate-300 rounded-lg border border-white shadow-white md:shadow-none lg:shadow-none shadow-lg md:shadow-sm lg:shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <a href={website_url} target="_blank">
         <img className="rounded-t-lg w-full" src={image_src} alt={name} />
       </a>

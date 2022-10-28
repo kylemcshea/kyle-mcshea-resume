@@ -69,7 +69,7 @@ const Introduction: React.FC = () => {
 
   return (
     <div>
-      <div className="pt-12 content-evenly grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-2 lg:gap-2">
+      <div className="pt-12 md:pt-24 lg:pt-24 content-evenly grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-2 lg:gap-2">
         <div className="slide-left mx-10 md:ml-12 lg:ml-12">
           <span className="nunito font-semibold text-2xl">
             <span className="border-b-2 border-white"> Hello World </span>
@@ -90,7 +90,7 @@ const Introduction: React.FC = () => {
               </a>
             </div>
           </span>
-          <div className="lg:block md:block hidden mt-6">
+          <div className="lg:block md:block hidden mt-10">
             <span className="nunito font-semibold text-xl border-b-2 border-white">
               SUMMARY 📰
             </span>
@@ -106,7 +106,7 @@ const Introduction: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-6 block lg:hidden md:hidden ">
+          <div className="mt-10 block lg:hidden md:hidden ">
             <div className="smooth-image-wrapper">
               <span className="z-20 rotate-45"></span>
               <motion.div
@@ -134,7 +134,7 @@ const Introduction: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-6">
+          <div className="mt-10">
             {width < 768 ? (
               <motion.div
                 initial="offscreen"
@@ -194,7 +194,7 @@ const Introduction: React.FC = () => {
               </motion.div>
             </div>
           </div>
-          <div className="mt-6">
+          <div className="mt-10">
             {width < 768 ? (
               <motion.div
                 initial="offscreen"
@@ -211,7 +211,7 @@ const Introduction: React.FC = () => {
           </div>
         </div>
         <motion.div
-          className="mt-6 lg:mt-0 md:mt-0"
+          className="w-screen mt-10 lg:mt-0 md:mt-0"
           variants={projectVariant}
           initial="hidden"
           ref={ref}
@@ -220,8 +220,8 @@ const Introduction: React.FC = () => {
           <span className="nunito font-semibold text-xl ml-6 border-b-2 lg:border-b-0 md:border-b-0 border-white">
             PROJECTS ✨
           </span>
-          <hr className="mt-2 w-screen divider-line invisible lg:visible md:visible" />
-          <div className="w-screen px-12 mt-6 grid flex md:grid-flow-col lg:grid-flow-col md:justify-between lg:justify-between">
+          <hr className="mx-6 mt-2 divider-line invisible lg:visible md:visible" />
+          <div className="w-screen px-12 mt-10 grid flex md:grid-flow-col lg:grid-flow-col md:justify-between lg:justify-between">
             {Projects.map((project) => {
               return <ProjectCard {...project} />;
             })}

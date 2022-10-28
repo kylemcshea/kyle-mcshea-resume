@@ -53,7 +53,7 @@ export const Tech: TechProps[] = [
   {
     image: TeamCity_Logo,
     name: "TeamCity",
-    size: 100,
+    size: 150,
   },
   {
     image: MySQL_Logo,
