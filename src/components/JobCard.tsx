@@ -18,14 +18,14 @@ const JobCard: React.FC<JobProps> = ({
       <div>
         <span className="text-lg">{position}</span>
       </div>
-      <div className="ml-3 text-base">
+      <div className="ml-4 text-base">
         <span>
           <FontAwesomeIcon className="mr-1" icon={faBuildingCircleArrowRight} />
           {company}
           <span className="hidden lg:inline md:inline"> ({location})</span>
         </span>
       </div>
-      <div className="ml-6 text-base">
+      <div className="ml-4 text-base">
         <span>
           <FontAwesomeIcon className="mr-1" icon={faClock} />
           {start_date} - {end_date}
