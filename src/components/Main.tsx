@@ -9,7 +9,7 @@ import TechSection from "./TechSection";
 // Animations
 import { motion, useAnimation, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import useWindowDimensions from "../hooks/Introduction";
+import useWindowDimensions from "../hooks/Main";
 
 const projectVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -51,7 +51,7 @@ const techVariants: Variants = {
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
-const Introduction: React.FC = () => {
+const Main: React.FC = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -122,8 +122,6 @@ const Introduction: React.FC = () => {
               >
                 <img
                   src={Headshot}
-                  height={200}
-                  width={400}
                   alt={"Head shot of Kyle McShea"}
                   className={`polaroid smooth-image ${
                     imageLoaded ? "image-visible" : "image-hidden"
@@ -232,4 +230,4 @@ const Introduction: React.FC = () => {
   );
 };
 
-export default Introduction;
+export default Main;
