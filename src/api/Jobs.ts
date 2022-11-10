@@ -54,7 +54,7 @@ export const Jobs: JobProps[] = [
     company: "The Estée Lauder Companies",
     start_date: "7/20",
     end_date: "9/20",
-    location: "Mahwah, NJ",
+    location: "New York, NY",
   },
   {
     position: "Information Security Analyst (Intern)",
