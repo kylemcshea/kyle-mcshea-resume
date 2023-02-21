@@ -75,7 +75,7 @@ const Main: React.FC = () => {
             <span className="border-b-2 border-white"> Hello World </span>
             <span className="wave-emoji ml-1">👋</span>
             <div className="text-base ml-3 mt-2">✨ Full Stack Developer</div>
-            <div className="text-base ml-3">✅ 2.5 Years Experience</div>
+            <div className="text-base ml-3">✅ 3 Years Experience</div>
             <div className="text-base ml-3">
               📝 Stevens Institute Of Technology{" "}
               <span className="hidden lg:inline md:inline">Class of 2021</span>

@@ -6,7 +6,7 @@ import Wave from "react-wavify";
 const NavBar: React.FC = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(false);
   return (
-    <nav className="slide-left w-screen flex items-center justify-between flex-wrap bg-blue-600 p-6">
+    <nav className="slide-down w-screen flex items-center justify-between flex-wrap bg-blue-600 p-6">
       <Wave
         className="position-wave w-screen rotate-180 inset-x-0 object-top absolute top z-0"
         fill="#FFFFFF"
