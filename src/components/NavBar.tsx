@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
     <nav className="slide-down w-screen flex items-center justify-between flex-wrap bg-blue-600 p-6">
       <Wave
         className="position-wave w-screen rotate-180 inset-x-0 object-top absolute top z-0"
-        fill="#FFFFFF"
+        fill="#A9A9A9"
         opacity={0.9}
         paused={false}
         options={{
@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
           points: 4,
         }}
       />
-      <div className="flex items-center flex-shrink-0 text-slate-700 mr-6 z-10">
+      <div className="flex items-center flex-shrink-0 text-slate-900 mr-6 z-10">
         <span className="text-lg mr-1">🔮</span>
         <span className="nunito font-semibold text-xl tracking-tight">
           Kyle McShea
@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
       <div className="z-10 block md:hidden lg:hidden">
         <button
           onClick={() => setIsBurgerOpen((prev) => !prev)}
-          className="flex items-center px-3 py-2 border rounded text-slate-700 border-teal-400 hover:text-black hover:border-black"
+          className="flex items-center px-3 py-2 border rounded text-slate-900 border-teal-400 hover:text-black hover:border-black"
         >
           <svg
             className="fill-current h-3 w-3"
@@ -45,7 +45,7 @@ const NavBar: React.FC = () => {
             onClick={() => setIsBurgerOpen(false)} // change isNavOpen state to false to close the menu
           >
             <svg
-              className="h-8 w-8 text-gray-600"
+              className="h-8 w-8 text-gray-800"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

@@ -9,13 +9,20 @@ export interface JobProps {
 export const Jobs: JobProps[] = [
   {
     position: "Full-Stack Engineer",
-    company: "Deutsche Bank",
-    start_date: "3/22",
+    company: "MailChimp",
+    start_date: "6/23",
     end_date: "Present",
+    location: "Brooklyn, NY",
+  },
+  {
+    position: "Full-Stack Engineer",
+    company: "Deutsche Bank",
+    start_date: "11/22",
+    end_date: "6/23",
     location: "New York, NY",
   },
   {
-    position: "Associate Consultant",
+    position: "Full-Stack Engineer",
     company: "Capco",
     start_date: "8/21",
     end_date: "11/22",
@@ -26,20 +33,6 @@ export const Jobs: JobProps[] = [
     company: "DreamState Development",
     start_date: "6/21",
     end_date: "11/22",
-    location: "New York, NY",
-  },
-  {
-    position: "Back-End Engineer",
-    company: "Freddie Mac",
-    start_date: "9/21",
-    end_date: "3/22",
-    location: "New York, NY",
-  },
-  {
-    position: "Technology Analyst",
-    company: "Silicon Valley Bank",
-    start_date: "8/21",
-    end_date: "9/21",
     location: "New York, NY",
   },
   {
