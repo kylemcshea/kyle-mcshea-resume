@@ -11,7 +11,7 @@ export interface ProjectProps {
 
 export const Projects: ProjectProps[] = [
   {
-    website_url: "https://discord.gg/dreamstaterp",
+    website_url: "https://www.youtube.com/@DreamstateRoleplay",
     name: "DreamState",
     image_src: DreamState,
     description:
