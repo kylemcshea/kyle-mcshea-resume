@@ -1,6 +1,6 @@
-import POSH from "../assets/posh_logo.jpg";
 import DreamState from "../assets/dreamstate_logo.png";
 import Breez from "../assets/breez_logo.png";
+import DreamScripts from "../assets/dream_scripts_logo.png";
 
 export interface ProjectProps {
   website_url: string;
@@ -11,7 +11,14 @@ export interface ProjectProps {
 
 export const Projects: ProjectProps[] = [
   {
-    website_url: "https://www.youtube.com/@DreamstateRoleplay",
+    website_url: "https://discord.gg/KysbXbrYNN",
+    name: "DreamScripts",
+    image_src: DreamScripts,
+    description:
+      "2,000+ Users. Online Ecommerce store to sell Grand Theft Auto v Modification Scripts. React, TypeScript, Lua, MySQL",
+  },
+  {
+    website_url: "https://www.youtube.com/watch?v=IlI81114ao0",
     name: "DreamState",
     image_src: DreamState,
     description:
@@ -23,12 +30,6 @@ export const Projects: ProjectProps[] = [
     image_src: Breez,
     description:
       "Passion Project. Made Sleek Landing page for a friend. HTML, CSS, jQuery.",
-  },
-  {
-    website_url: "https://posh.vip",
-    name: "POSH",
-    image_src: POSH,
-    description: "Event Marketing Startup. HTML, CSS, jQuery, Node, MongoDB",
   },
 ];
 

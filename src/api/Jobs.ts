@@ -9,10 +9,10 @@ export interface JobProps {
 export const Jobs: JobProps[] = [
   {
     position: "Full-Stack Engineer",
-    company: "MailChimp",
+    company: "Intuit Mailchimp",
     start_date: "6/23",
     end_date: "Present",
-    location: "Brooklyn, NY",
+    location: "New York, NY",
   },
   {
     position: "Full-Stack Engineer",
