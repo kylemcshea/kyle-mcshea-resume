@@ -1,4 +1,3 @@
-import DreamState from "../assets/dreamstate_logo.png";
 import Breez from "../assets/breez_logo.png";
 import DreamScripts from "../assets/dream_scripts_logo.png";
 import VerseLabs from "../assets/VerseLabs_Simple_Background.png";
