@@ -1,6 +1,7 @@
 import DreamState from "../assets/dreamstate_logo.png";
 import Breez from "../assets/breez_logo.png";
 import DreamScripts from "../assets/dream_scripts_logo.png";
+import VerseLabs from "../assets/VerseLabs_Simple_Background.png";
 
 export interface ProjectProps {
   website_url: string;
@@ -11,18 +12,18 @@ export interface ProjectProps {
 
 export const Projects: ProjectProps[] = [
   {
+    website_url: "https://verselabs.io/",
+    name: "Verse Labs",
+    image_src: VerseLabs,
+    description:
+      "Worked with over 5 clients in the North East Region. We build web and mobile applications.",
+  },
+  {
     website_url: "https://discord.gg/KysbXbrYNN",
     name: "DreamScripts",
     image_src: DreamScripts,
     description:
       "2,000+ Users. Online Ecommerce store to sell Grand Theft Auto v Modification Scripts. React, TypeScript, Lua, MySQL",
-  },
-  {
-    website_url: "https://www.youtube.com/watch?v=IlI81114ao0",
-    name: "DreamState",
-    image_src: DreamState,
-    description:
-      "5,000+ Users. 19+ Years Total Playtime. Lua, React, TypeScript, mySQL, HTML, CSS, jQuery.",
   },
   {
     website_url: "https://breez-music-kylemcshea.vercel.app/",
